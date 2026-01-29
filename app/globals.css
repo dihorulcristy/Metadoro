@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors - High Fidelity */
+  --metadoro-red: #4a0404;
+  --metadoro-red-light: #8a1c1c;
+  --metadoro-black: #050505;
+  /* Darker, deeper black */
+
+  /* Gold Gradient Stops */
+  --gold-100: #F9E59E;
+  --gold-300: #D4AF37;
+  --gold-500: #9E7D22;
+  --gold-700: #5C450E;
+
+  --metadoro-white: #e5e5e5;
+  --metadoro-gray: #121212;
+
+  /* Theme mappings */
+  --background: var(--metadoro-black);
+  --foreground: var(--metadoro-white);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-metadoro-red: var(--metadoro-red);
+  --color-metadoro-red-light: var(--metadoro-red-light);
+  --color-metadoro-black: var(--metadoro-black);
+
+  /* Gold Palette */
+  --color-gold-100: var(--gold-100);
+  --color-gold-300: var(--gold-300);
+  --color-gold-500: var(--gold-500);
+  --color-gold-700: var(--gold-700);
+
+  --color-metadoro-white: var(--metadoro-white);
+  --color-metadoro-gray: var(--metadoro-gray);
+
+  --font-serif: var(--font-cinzel);
+  --font-sans: var(--font-inter);
+
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+body {
+  background-color: #000000;
+  /* Fallback pentru browsere vechi */
+  background-image: radial-gradient(circle at 50% 20%,
+      /* Lumina este centrată sus */
+      #5e1212 0%,
+      /* Centru: Roșu închis (Blood Red) */
+      #2b0505 40%,
+      /* Tranziție: Maro foarte închis */
+      #050101 100%
+      /* Margini: Negru aproape total */
+    );
+  background-attachment: fixed;
+  /* Menține fundalul fix când dai scroll */
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
