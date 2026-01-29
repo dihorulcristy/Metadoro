@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 export function Footer() {
     return (
-        <footer className="bg-metadoro-black border-t border-white/10 pt-20 pb-10">
-            <div className="max-w-7xl mx-auto px-6">
+        <footer className="relative bg-[url('/site-bg.jpg')] bg-cover bg-fixed bg-no-repeat bg-center border-t border-white/10 pt-20 pb-10">
+            <div className="absolute inset-0 bg-black/80" />
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-2">
                         <h3 className="text-2xl font-serif font-bold text-metadoro-white tracking-widest mb-6">METADORO</h3>

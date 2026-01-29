@@ -29,8 +29,9 @@ const features = [
 
 export function Features() {
     return (
-        <section className="py-24 bg-gradient-to-b from-metadoro-gray to-metadoro-black border-y border-white/5">
-            <div className="max-w-7xl mx-auto px-6">
+        <section className="relative py-24 bg-[url('/site-bg.jpg')] bg-cover bg-fixed bg-no-repeat bg-center border-y border-white/5">
+            <div className="absolute inset-0 bg-black/80" />
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 className="text-4xl md:text-5xl font-bold text-metadoro-white mb-8">

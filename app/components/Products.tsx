@@ -35,8 +35,9 @@ const products = [
 
 export function Products() {
     return (
-        <section className="relative py-32 bg-metadoro-black z-10 -mt-20">
-            <div className="max-w-7xl mx-auto px-6">
+        <section className="relative py-32 bg-[url('/site-bg.jpg')] bg-cover bg-fixed bg-no-repeat bg-center z-10 -mt-20 border-t border-white/5">
+            <div className="absolute inset-0 bg-black/80" />
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {products.map((product) => (
                         <div

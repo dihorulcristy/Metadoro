@@ -45,19 +45,7 @@
 }
 
 body {
-  background-color: #000000;
-  /* Fallback pentru browsere vechi */
-  background-image: radial-gradient(circle at 50% 20%,
-      /* Lumina este centrată sus */
-      #5e1212 0%,
-      /* Centru: Roșu închis (Blood Red) */
-      #2b0505 40%,
-      /* Tranziție: Maro foarte închis */
-      #050101 100%
-      /* Margini: Negru aproape total */
-    );
-  background-attachment: fixed;
-  /* Menține fundalul fix când dai scroll */
+  background-color: #050101;
   min-height: 100vh;
   color: #ffffff;
   font-family: var(--font-sans);

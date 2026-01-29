@@ -6,7 +6,8 @@ export function HallOfMatadors() {
     ];
 
     return (
-        <section className="py-24 bg-metadoro-black relative border-t border-white/5">
+        <section className="py-24 bg-[url('/site-bg.jpg')] bg-cover bg-fixed bg-no-repeat bg-center relative border-t border-white/5">
+            <div className="absolute inset-0 bg-black/80" />
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5" /> {/* Fallback if no global noise */}
 
             <div className="max-w-4xl mx-auto px-6 relative z-10">
